@@ -4,33 +4,7 @@
 require_once('controllerController.php');
 
 class courseController extends Controller {
-  //const JSON_ALUMNI = 'data/alumni.json';
-
-  public function listar() {
-    $alumni = $this->getData('alumnos');
-    var_dump($alumni);
-    $this->getView('stock','list');
-  }
-  //AGREGAR NUEVO DESDE FORMULARIO
-  public function agregar() {
-    echo '....';
-    $vehiculo = [
-      "first_name" => 4,
-      "last_name" => "Torino",
-      "mail" => "viejo",
-      "phone" => 1,
-      "level" => "violeta bb",
-      "course" => 8544875343
-    ];
-    $alumni = $this->getData('alumni');
-
-    array_push($alumni, $vehiculo);
-
-    //file_put_contents(self::JSON_VEHICULOS, json_encode($array));
-    $this->setData('alumni', $alumni);
-
-    $this->listar();
-  }
+  //FALTA DESARROLLAR
 }
 
 /*require_once('controllers/controllerController.php');
