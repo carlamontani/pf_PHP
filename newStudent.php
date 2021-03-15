@@ -67,7 +67,7 @@ include 'data.php';
             </tbody>
         </table>
     </div>
-    <form method="post" name="add_employee" action="process_new.php">
+    <form method="post" name="add_student" action="process_new.php">
         <input type="hidden" name="action" value="add">
         <div class="row">
             <div class="six columns">
@@ -77,6 +77,24 @@ include 'data.php';
             <div class="six columns">
                 <label for="exampleEmailInput">Apellido</label>
                 <input class="u-full-width" type="text" id="exampleEmailInput" name="last_name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label for="exampleEmailInput">Mail</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" name="mail">
+            </div>
+            <div class="four columns">
+                <label for="exampleEmailInput">Teléfono</label>
+                <input class="u-full-width" type="number" id="exampleEmailInput" name="phone">
+            </div>
+            <div class="four columns">
+                <label for="exampleRecipientInput">Nivel de conocimiento</label>
+                <select class="u-full-width" id="exampleRecipientInput" name="level">
+                    <option value="Basico">Basico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
             </div>
         </div>
         <input class="button-primary" type="submit" value="Submit">
@@ -89,24 +107,7 @@ include 'data.php';
 
 <!-- End Document
 
-        <div class="row">
-            <div class="four columns">
-                <label for="exampleEmailInput">Mail</label>
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-            </div>
-            <div class="four columns">
-                <label for="exampleEmailInput">Teléfono</label>
-                <input class="u-full-width" type="number" id="exampleEmailInput">
-            </div>
-            <div class="four columns">
-                <label for="exampleRecipientInput">Nivel de conocimiento</label>
-                <select class="u-full-width" id="exampleRecipientInput">
-                    <option value="Option 1">Basico</option>
-                    <option value="Option 2">Intermedio</option>
-                    <option value="Option 3">Avanzado</option>
-                </select>
-            </div>
-        </div>
+
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

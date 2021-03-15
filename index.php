@@ -1,99 +1,48 @@
 <?php
-    include 'data.php';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>TP PHP</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+function autoload($controller){
+    if (file_exists('controllers/' . $controller. '.php'))
+        require_once 'controllers/' . $controller. '.php';
+}
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+spl_autoload_register('autoload');
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+$controller = isset($_GET['controller']) ? $_GET['controller'].'Controller' : "";
+$action = isset($_GET['action']) ? $_GET['action'] : "";
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
+if(class_exists($controller)){
+    $controller = new $controller();
 
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-
-    <!-- sweet alert
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="sweetalert2.min.css">
+    if(method_exists($controller, $action)) {
+        $controller->$action();
+    } else {
+        echo "La acción ingresada no existe";
+    }
+} else {
+    echo ("El modulo que intentas acceder no existe, lo escribiste bien?");
+}
 
 
-</head>
-<body>
+/*
 
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
-    <div class="row">
-        <div style="margin-top: 15%">
-            <h2>Escuela de Programación y Software</h2>
-            <p>Lista de Cursos</p>
-        </div>
-    </div>
-    <div class="row">
-        <table class="u-full-width">
-            <thead>
-            <tr>
-                <th>Curso</th>
-                <th>Profesor</th>
-                <th>Duracion</th>
-                <th>Inicio</th>
-                <th>Costo</th>
-                <th>Link</th>
-            </tr>
-            </thead>
-            <tbody>
-                <?php
-                foreach ($course_list as $key => $course) {
-                ?>
-                    <tr>
-                        <td><?=$course['Course']?></td>
-                        <td><?=$course['Teacher']?></td>
-                        <td><?=$course['Duration']?></td>
-                        <td><?=$course['Duration']?></td>
-                        <td><?=$course['Course']?></td>
-                        <td>
-                            <button>Anotarme</button>
-                        </td>
-                    </tr>
-                    <?php
-                }
-                ?>
-            </tbody>
-        </table>
-    </div>
-    <div class="row">
-        <?php
-        foreach ($course_list as $key => $course) {
-            ?>
+function autoload($controller){
+  include 'controllers/' . $controller . '.php';
+}
 
-            <?php
-        }
-        ?>
-    </div>
-    <input class="button-primary" type="submit" value="Ir al Carrito">
-</div>
+spl_autoload_register('autoload');
 
-<script src="alert.js"></script>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-</html>
+$controller = isset($_GET['controller']) ? $_GET['controller'].'Controller' : "";
+$action = isset($GET['action']) ? $_GET['action'] : "";
+
+//si existe el controler ejecuta el autoload, include
+if(class_exists($controller)){
+  $controller = new $controller();
+
+  //ejecuta la accion
+  if(method_exists($controller,$action)){
+    $controller->$action();
+  }
+}
+//$pepe = new Pepe()
+//
+ */

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "course": "Maquetado Web",
+    "teacher": "Ambrosio Cuevas",
+    "duration": 100,
+    "date": "5/4"
+  },
+  {
+    "id": 2,
+    "course": "Maquetado Web 2",
+    "teacher": "Juan Lopez",
+    "duration": 300,
+    "date": "10/4"
+  }
+]
