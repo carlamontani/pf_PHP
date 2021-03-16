@@ -51,7 +51,7 @@
     <!--
           DEBERIA IR A http://localhost/MVC/index.php?controller=alumnos&action=agregar o http://localhost/MVC/views/addStudent.php ?
     -->
-    <form method="post" name="add_newCourse" action="process_newCourse.php">
+    <form method="post" name="add_newCourse" action="addStudent.php">
         <div class="row">
             <table class="u-full-width">
                 <thead>
@@ -90,18 +90,6 @@
         <input class="button-primary" type="submit" value="Ir al Carrito" action="./views/addStudent.php">
     </form>
 </div>
-
-<!--<script src="alert.js"></script>
-    <div class="row">
-            <?php
-    //foreach ($course_list as $key => $course) {
-        ?>
-
-                <?php
-    //}
-    ?>
-    </div>
--->
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

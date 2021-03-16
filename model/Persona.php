@@ -23,8 +23,25 @@ class Persona {
     }
 
     //metodos
+
     public function showResult() {
-        return $this->name . " " . $this->last_name . " estas inscripte a " . $this->course ;
+        include '../views/header.php';
+        ?>
+            <div class="row">
+                <div style="margin-top: 15%">
+                    <h2><strong>Hola <?php echo $this->name ?> !</strong></h2>
+                </div>
+            </div>
+        <?php
+        echo '<h5>' . "Ya estas inscripte a " . $this->course .  "&#10024" . '</h5>';
+        echo '<p>' . "Te enviamos un mail de confirmación a " . '<strong>' . $this->mail . '</strong>' . '</p>';
+        ?>
+
+            <form action="./home.php">
+                <button class="button-primary">Volver</button
+            </form>
+        <?php
+        include '../views/footer.php';
     }
 }
 

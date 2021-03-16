@@ -1,13 +1,19 @@
 <?php
 
 //require ('data/courses.php');
-require_once('controllerController.php');
+//falta desarrollar
+require_once('mainController.php');
 
 class courseController extends Controller {
-  //FALTA DESARROLLAR
+    public function agregar() {
+        echo 'agregar cursos';
+    }
 }
 
-/*require_once('controllers/controllerController.php');
+/*
+ *
+/*
+ * require_once('controllers/mainController.php');
 
 class stockController extends BaseController {
 
@@ -46,3 +52,4 @@ class stockController extends BaseController {
 
     }
 }/*
+ */

@@ -1,6 +1,6 @@
 <?php
 
-require_once('controllerController.php');
+require_once('mainController.php');
 
 class alumnosController extends Controller {
 
@@ -39,7 +39,7 @@ class alumnosController extends Controller {
 
 <?php
 //base controller renombrar
-require_once('controllers/controllerController.php');
+require_once('controllers/mainController.php');
 
 class alumniController extends Controller {
     //const JSON_ALUMNI = 'data/alumni.json';

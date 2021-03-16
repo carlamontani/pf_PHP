@@ -1,10 +1,1 @@
-[
-  {
-    "first_name": "carla",
-    "last_name": "montani",
-    "mail": "car@car.com",
-    "phone": 1530146800,
-    "level": 1,
-    "course": "php"
-  }
-]
+[{"first_name":"carla","last_name":"montani","mail":"car@car.com","phone":1530146800,"level":1,"course":"php"},{"first_name":"Juan","last_name":"Toro","mail":"juancito@gmail.com","phone":1529430200,"level":"avanzado","course":"laravel"},{"first_name":"Juan","last_name":"Toro","mail":"juancito@gmail.com","phone":1529430200,"level":"avanzado","course":"laravel"},{"first_name":"Juan","last_name":"Toro","mail":"juancito@gmail.com","phone":1529430200,"level":"avanzado","course":"laravel"},{"first_name":"Juan","last_name":"Toro","mail":"juancito@gmail.com","phone":1529430200,"level":"avanzado","course":"laravel"},{"first_name":"Juan","last_name":"Toro","mail":"juancito@gmail.com","phone":1529430200,"level":"avanzado","course":"laravel"},{"first_name":"Juan","last_name":"Toro","mail":"juancito@gmail.com","phone":1529430200,"level":"avanzado","course":"laravel"},{"first_name":"Juan","last_name":"Toro","mail":"juancito@gmail.com","phone":1529430200,"level":"avanzado","course":"laravel"}]

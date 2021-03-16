@@ -19,7 +19,7 @@ if(class_exists($controller)){
         echo "La acción ingresada no existe";
     }
 } else {
-    echo ("El modulo que intentas acceder no existe, lo escribiste bien?");
+    echo ("La sección ingresada no existe");
 }
 
 
