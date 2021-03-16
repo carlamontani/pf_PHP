@@ -1,5 +1,5 @@
 <?php
-    include '../model/courses.php';
+    include 'model/courses.php'; //
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +22,8 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="views/css/normalize.css">
+    <link rel="stylesheet" href="views/css/skeleton.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,7 +51,7 @@
     <!--
           DEBERIA IR A http://localhost/MVC/index.php?controller=alumnos&action=agregar o http://localhost/MVC/views/addStudent.php ?
     -->
-    <form method="post" name="add_newCourse" action="addStudent.php">
+    <form method="post" name="add_newCourse" action="views/addStudent.php">
         <div class="row">
             <table class="u-full-width">
                 <thead>

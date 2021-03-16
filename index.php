@@ -19,7 +19,7 @@ if(class_exists($controller)){
         echo "La acción ingresada no existe";
     }
 } else {
-    echo ("La sección ingresada no existe");
+    require_once 'views/home.php';
 }
 
 

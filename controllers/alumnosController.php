@@ -14,7 +14,7 @@ class alumnosController extends Controller {
   public function agregar() {
 
     //VISTA FORM PARA AGREGAR ALUMNOS
-    $this->getView('views','addStudent');
+    $this->getView('views','addStudentView');
 
     //INFO DESDE EL FORMULARIO
     $alumno = [
