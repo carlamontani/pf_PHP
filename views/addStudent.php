@@ -38,7 +38,7 @@
             <p>Cursos Seleccionados:</p>
         </div>
     </div>
-    <form method="post" name="add_student" action="process_new.php">
+    <form method="post" name="add_student" action="newAlumnosController.php">
         <div class="row">
             <table class="u-full-width">
                 <thead>

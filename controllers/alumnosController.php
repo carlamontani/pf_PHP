@@ -19,7 +19,7 @@ class alumnosController extends Controller {
     //INFO DESDE EL FORMULARIO
     $alumno = [
       "first_name" => 'Juan',
-      "last_name" => 'Toro',
+      "last_name" => 'Toros',
       "mail" => "juancito@gmail.com",
       "phone" => 1529430200,
       "level" => "avanzado",
