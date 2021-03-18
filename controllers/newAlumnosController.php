@@ -1,7 +1,5 @@
 <?php
 
-//echo 'prueba';
-
 if (isset($_POST['action']) || isset($_GET['action'])) {
 
     if (isset($_POST['action'])) {
@@ -30,18 +28,18 @@ function add_student(){
     $level = isset($_POST['$level']) ? trim($_POST['level']) : "";
     $course = isset($_POST['course']) ? ($_POST['course']) : "";
 
-    //var_dump($course);
-    require_once('../model/Persona.php');
-    $student = new Persona();
+    require_once('../model/Alumno.php');
+    $student = new Alumno();
     $student->name=$name;
     $student->last_name=$last_name;
     $student->mail=$mail;
     $student->level=$level;
     $student->course=$course;
     echo $student->showResult();
+    //var_dump($student);
 
     require_once('../model/Alumno.php');
-    echo 'prueba';
-    $persona = new Alumno();
-    echo $persona->prueba();
+
+    //$persona = new Alumno();
+    //echo $persona->prueba();
 }

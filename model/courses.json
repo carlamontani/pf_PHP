@@ -1,16 +1,74 @@
 [
   {
-    "id": 1,
-    "course": "Maquetado Web",
     "teacher": "Ambrosio Cuevas",
-    "duration": 100,
-    "date": "5/4"
+    "duration": 300,
+    "date": "5/4/2021",
+    "value": 2000,
+    "mail": "javascript@prueba.com",
+    "course": "Javascript"
   },
   {
-    "id": 2,
-    "course": "Maquetado Web 2",
+    "teacher": "Tomomi Gulisa",
+    "duration": 100,
+    "date": "10/4/2021",
+    "value": 3000,
+    "mail": "uxui@prueba.com",
+    "course": "Diseño Ux-Ui"
+  },
+  {
+    "teacher": "Mariana Herrera",
+    "duration": 100,
+    "date": "5/4/2021",
+    "value": 2000,
+    "mail": "html@prueba.com",
+    "course": "Maquetado Web"
+  },
+  {
     "teacher": "Juan Lopez",
     "duration": 300,
-    "date": "10/4"
+    "date": "10/4/2021",
+    "value": 3000,
+    "mail": "css@prueba.com",
+    "course": "Maquetado Web 2"
+  },
+  {
+    "teacher": "Chandra Athaulf",
+    "duration": 5,
+    "date": "5/4/2021",
+    "value": 2000,
+    "mail": "db@prueba.com",
+    "course": "Base de Datos"
+  },
+  {
+    "teacher": "Aditi Paraskeva",
+    "duration": 25,
+    "date": "5/4/2021",
+    "value": 3000,
+    "mail": "react@prueba.com",
+    "course": "React"
+  },
+  {
+    "teacher": "Monica Sanchez",
+    "duration": 25,
+    "date": "5/4/2021",
+    "value": 2000,
+    "mail": "nodejs@prueba.com",
+    "course": "NodeJS"
+  },
+  {
+    "teacher": "Juan Baroni",
+    "duration": 35,
+    "date": "10/4/2021",
+    "value": 3000,
+    "mail": "php@prueba.com",
+    "course": "PHP"
+  },
+  {
+    "teacher": "Paula Smith",
+    "duration": 20,
+    "date": "10/4/2021",
+    "value": 35000,
+    "mail": "laravel@prueba.com",
+    "course": "Laravel"
   }
 ]

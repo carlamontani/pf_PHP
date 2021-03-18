@@ -23,6 +23,7 @@ class Profesor extends Persona {
     }
 
     public function showResult() {
+        //ver si es necesario
         include 'views/header.php';
         foreach ($alumnos as $key => $alumno) {
             ?>

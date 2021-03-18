@@ -8,7 +8,6 @@ abstract class Controller {
   }
 
   protected function setData($table, $array){
-    //var_dump($array);
     file_put_contents("model/$table.json", json_encode($array));
   }
 

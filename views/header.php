@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="views/css/normalize.css">
     <link rel="stylesheet" href="views/css/skeleton.css">
+    <link rel="stylesheet" href="../views/css/normalize.css">
+    <link rel="stylesheet" href="../views/css/skeleton.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->

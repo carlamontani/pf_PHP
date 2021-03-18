@@ -1,5 +1,7 @@
 <?php
 
+//BORRAR
+/*
 if (isset($_POST['action']) || isset($_GET['action'])) {
 
     if (isset($_POST['action'])) {
@@ -38,3 +40,5 @@ function add_student(){
     $student->course=$course;
     echo $student->showResult();
 }
+
+*/

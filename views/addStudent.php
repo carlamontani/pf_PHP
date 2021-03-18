@@ -1,44 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>TP PHP</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body>
-
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
+<?php
+    require_once 'header.php'
+?>
     <div class="row">
         <div style="margin-top: 15%">
-            <h3>Inscribite</h3>
+            <h3>Formulario de Inscripción</h3>
             <p>Cursos Seleccionados:</p>
         </div>
     </div>
-    <form method="post" name="add_student" action="newAlumnosController.php">
+    <form method="post" name="add_student" action="../controllers/newAlumnosController.php">
         <div class="row">
             <table class="u-full-width">
                 <thead>
@@ -48,19 +17,18 @@
                     <th>Duracion</th>
                     <th>Inicio</th>
                     <th>Costo</th>
-                    <th>Link</th>
+                    <th>Confirmación</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>Diseño Ux-Ui</td>
                     <td>Tomi Gulisa</td>
-                    <td>100</td>
+                    <td>100 hs.</td>
                     <td>5/4</td>
-                    <td>2000</td>
+                    <td>$2000</td>
                     <td>
                         <label class="example-send-yourself-copy">
-                            <span class="label-body">Inscribirme</span>
                             <input type="checkbox" name="course" value="Diseño Ux-Ui">
                         </label>
                     </td>

@@ -23,9 +23,8 @@ abstract class Persona {
     }
 
     //metodos
-
     public function showResult() {
-        include 'views/header.php';
+        include '../views/header.php';
         ?>
             <div class="row">
                 <div style="margin-top: 15%">
@@ -37,11 +36,11 @@ abstract class Persona {
         echo '<p>' . "Te enviamos un mail de confirmación a " . '<strong>' . $this->mail . '</strong>' . '</p>';
         ?>
 
-            <form action="./home.php">
-                <button class="button-primary">Volver</button
+            <form action="../index.php">
+                <button class="button-primary">Volver</button>
             </form>
         <?php
-        include 'views/footer.php';
+        include '../views/footer.php';
     }
 }
 
