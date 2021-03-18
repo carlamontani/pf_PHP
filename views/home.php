@@ -87,7 +87,10 @@
         <!--
           DEBERIA IR A http://localhost/MVC/index.php?controller=alumnos&action=agregar o http://localhost/MVC/views/addStudent.php ?
         -->
-        <input class="button-primary" type="submit" value="Ir al Carrito" action="./views/addStudent.php">
+
+    </form>
+    <form action="./views/addCourse.php">
+        <input class="button-primary" type="submit" value="Agrega tu curso">
     </form>
 </div>
 <!-- End Document

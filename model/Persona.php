@@ -1,12 +1,12 @@
 <?php
-class Persona {
+abstract class Persona {
     //atributos-
     private $name;
     private $last_name;
-    private $mail;
+    public $mail;
     private $phone;
     private $level;
-    private $course;
+    public $course;
 
     //getters
     public function __get($property) {
@@ -25,7 +25,7 @@ class Persona {
     //metodos
 
     public function showResult() {
-        include '../views/header.php';
+        include 'views/header.php';
         ?>
             <div class="row">
                 <div style="margin-top: 15%">
@@ -41,7 +41,7 @@ class Persona {
                 <button class="button-primary">Volver</button
             </form>
         <?php
-        include '../views/footer.php';
+        include 'views/footer.php';
     }
 }
 

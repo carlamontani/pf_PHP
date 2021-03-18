@@ -19,8 +19,8 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="views/css/normalize.css">
-    <link rel="stylesheet" href="views/css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,67 +34,40 @@
 <div class="container">
     <div class="row">
         <div style="margin-top: 15%">
-            <h3>Inscribite</h3>
-            <p>Cursos Seleccionados:</p>
+            <h3>Agregar tu curso</h3>
+            <p>Complete sus datos para publicar:</p>
         </div>
     </div>
-    <form method="post" name="views/newAlumnosController.php">
-        <div class="row">
-            <table class="u-full-width">
-                <thead>
-                <tr>
-                    <th>Curso</th>
-                    <th>Profesor</th>
-                    <th>Duracion</th>
-                    <th>Inicio</th>
-                    <th>Costo</th>
-                    <th>Link</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Diseño Ux-Ui</td>
-                    <td>Tomi Gulisa</td>
-                    <td>100</td>
-                    <td>5/4</td>
-                    <td>2000</td>
-                    <td>
-                        <label class="example-send-yourself-copy">
-                            <span class="label-body">Inscribirme</span>
-                            <input type="checkbox" name="course" value="Diseño Ux-Ui">
-                        </label>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+    <form method="post" name="add_student" action="../index.php?controller=courses&action=agregar">
         <input type="hidden" name="action" value="add">
         <div class="row">
+            <div class="twelve columns">
+                <label for="exampleEmailInput">Nombre del Curso</label>
+                <input class="u-full-width" type="text" id="exampleEmailInput" name="course">
+            </div>
+        </div>
+        <div class="row">
             <div class="six columns">
-                <label for="exampleEmailInput">Nombre</label>
-                <input class="u-full-width" type="text" id="exampleEmailInput" name="name">
+                <label for="exampleEmailInput">Nombre del Docente</label>
+                <input class="u-full-width" type="text" id="exampleEmailInput" name="teacher">
             </div>
             <div class="six columns">
-                <label for="exampleEmailInput">Apellido</label>
-                <input class="u-full-width" type="text" id="exampleEmailInput" name="last_name">
+                <label for="exampleEmailInput">Mail</label>
+                <input class="u-full-width" type="email" placeholder="test@mail.com" id="exampleEmailInput" name="mail">
             </div>
         </div>
         <div class="row">
             <div class="four columns">
-                <label for="exampleEmailInput">Mail</label>
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" name="mail">
+                <label for="exampleEmailInput">Duración del curso</label>
+                <input class="u-full-width" type="number" placeholder="hs." id="exampleEmailInput" name="duration">
             </div>
             <div class="four columns">
-                <label for="exampleEmailInput">Teléfono</label>
-                <input class="u-full-width" type="number" id="exampleEmailInput" name="phone">
+                <label for="exampleEmailInput">Fecha de Inicio</label>
+                <input class="u-full-width" type="text" placeholder="Formato dia/mes/año" id="exampleEmailInput" name="date">
             </div>
             <div class="four columns">
-                <label for="exampleRecipientInput">Nivel de conocimiento</label>
-                <select class="u-full-width" id="exampleRecipientInput" name="level">
-                    <option value="Basico">Basico</option>
-                    <option value="Intermedio">Intermedio</option>
-                    <option value="Avanzado">Avanzado</option>
-                </select>
+                <label for="exampleEmailInput">Valor</label>
+                <input class="u-full-width" type="number" id="exampleEmailInput" name="value">
             </div>
         </div>
         <input class="button-primary" type="submit" value="Submit">

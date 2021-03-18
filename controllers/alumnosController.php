@@ -7,6 +7,7 @@ class alumnosController extends Controller {
   public function listar() {
     $alumnos = $this->getData('alumnos');
     var_dump($alumnos);
+
     //$this->getView('views','newStudent');
   }
 

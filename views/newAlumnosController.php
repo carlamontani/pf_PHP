@@ -1,5 +1,7 @@
 <?php
 
+//echo 'prueba';
+
 if (isset($_POST['action']) || isset($_GET['action'])) {
 
     if (isset($_POST['action'])) {
